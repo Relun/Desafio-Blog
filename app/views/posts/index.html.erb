@@ -1,5 +1,12 @@
-<h1>Posts y Formulario</h1>
+<h1 class="py-3">Ingrese su post</h1>
+<form class="form" method="get" action="posts/create" class="py-5">
+    Titulo:<input name="titulo" class="form-control">
+    Url Imagen:<input name="url_img" class="form-control">
+    Contenido:<textarea name="contenido" class="form-control"></textarea>
+    <input type="submit" value="Enviar">
+</form>
 
+<h2 class="py-5">Listado de posts</h2>
 <table>
     <tr>
         <th>titulo</th>
@@ -18,10 +25,3 @@
 <% end %>
 </table>
 
-<h2>Ingrese su post</h2>
-<form class="form" method="get" action="posts/create">
-    Titulo:<input name="titulo">
-    Url Imagen:<input name="url_img">
-    Contenido:<textarea name="contenido"></textarea>
-    <input type="submit" value="Enviar">
-</form>
