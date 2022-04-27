@@ -1,18 +1,18 @@
-<h1 class="py-3">Ingrese su post</h1>
-<form class="form" method="get" action="posts/create" class="py-5">
-    Titulo:<input name="titulo" class="form-control">
-    Url Imagen:<input name="url_img" class="form-control">
-    Contenido:<textarea name="contenido" class="form-control"></textarea>
-    <input type="submit" value="Enviar">
+<h1 class="my-4">Ingrese su post</h1>
+<form class="form" method="get" action="posts/create" class="py-5" id="create_posts">
+    Título:<input name="titulo" class="form-control my-1">
+    Url Imagen:<input name="url_img" class="form-control my-1">
+    Contenido:<textarea name="contenido" class="form-control my-1"></textarea>
+    <input type="submit" value="Enviar" class=" btn btn-dark my-3">
 </form>
 
-<h2 class="py-5">Listado de posts</h2>
-<table>
+<h2 class="my-4">Listado de posts</h2>
+<table class="table">
     <tr>
-        <th>titulo</th>
-        <th>imagen</th>
-        <th>contenido</th>
-        <th>creación</th>
+        <th>Título</th>
+        <th>Imagen</th>
+        <th>Contenido</th>
+        <th>Fecha Creación</th>
     </tr>
 
 <% @posts.each do |post| %>
